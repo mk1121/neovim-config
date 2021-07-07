@@ -1,30 +1,15 @@
-" Silverlight (Ag) support:
-" Installing https://github.com/ggreer/the_silver_searcher
-"   apt-get install silversearcher-ag
-"
+call plug#begin('~/.vim/plugged')
+ 
+  Plug 'dikiaap/minimalist'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'ianks/vim-tsx'
+ Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+ let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-emmet', 'coc-tsserver', 'coc-prettier', 'coc-tslint']
 
-" Awesome Function :)
-function! SourceDirectory(file)
-  for s:fpath in split(globpath(a:file, '*.vim'), '\n')
-    exe 'source' s:fpath
-  endfor
-endfunction
+ call plug#end()
+ 
+ "COLOR SCHEMA
+ set t_Co=256
+syntax on
+colorscheme minimalist
 
-if has('unix')
-  " Call the awesome function
-  call SourceDirectory('~/.config/nvim/vimrcs')
-  " Bootstrapping vim-plug automatically
-  if empty(glob('~/.config/nvim/autoload/plug.vim'))
-    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall | source $MYVIMRC
-  endif
-elseif has('win32')
-  " Bootstrapping vim-plug automatically
-  if empty(glob('~/AppData/Local/nvim/autoload/plug.vim'))
-    silent !curl -fLo ~/AppData/Local/nvim/autoload/plug.vim --create-dirs
-          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall | source $MYVIMRC
-  endif
-  call SourceDirectory('~/AppData/Local/nvim/vimrcs')
-endif

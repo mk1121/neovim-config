@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/mk1122/Downloads'
+let g:netrw_dirhist_9='/home/mk1122/Documents/projects/ema-jhon/src'
+let g:netrw_dirhist_8='/home/mk1122/Documents/projects/ema-jhon/components/Header'
+let g:netrw_dirhist_7='/home/mk1122/Documents/projects/ema-jhon/components'
+let g:netrw_dirhist_6='/home/mk1122/Documents/projects/ema-jhon'
+let g:netrw_dirhist_5='/home/mk1122/Documents/projects/ema-jhon/src'
+let g:netrw_dirhist_4='/home/mk1122/Documents/projects/ema-jhon'
+let g:netrw_dirhist_3='/home/mk1122/.config/nvim'
+let g:netrw_dirhist_2='/home/mk1122/.config/nvim/autoload'
 let g:netrw_dirhist_1='/home/mk1122/.config/nvim'
