@@ -39,7 +39,7 @@ let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', '
 " ALE
 " Check syntax in Vim asynchronously and fix files,
 " with Language Server Protocol (LSP) support
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 
 " Vim Polyglot
 Plug 'sheerun/vim-polyglot'
@@ -86,7 +86,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " Prettier
-"Plug 'prettier/vim-prettier',  { 'tag': '0.2.6', 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html', 'lua', 'php', 'python', 'ruby', 'swift'] }
+Plug 'prettier/vim-prettier',  { 'tag': '0.2.6', 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html', 'lua', 'php', 'python', 'ruby', 'swift'] }
 
 " Editor config
 " A solid language pack for Vim.
@@ -103,10 +103,10 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-surround'
 
 " Laravel Blade support
-Plug 'jwalton512/vim-blade'
+"Plug 'jwalton512/vim-blade'
 
 " Phpactor
-Plug 'phpactor/phpactor', {'for': 'php', 'branch': 'master', 'do': 'composer install --no-dev -o'}
+"Plug 'phpactor/phpactor', {'for': 'php', 'branch': 'master', 'do': 'composer install --no-dev -o'}
 
 Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }
 " PHP Documentor for vim
