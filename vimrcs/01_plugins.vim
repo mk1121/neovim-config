@@ -34,7 +34,7 @@ Plug 'rking/ag.vim'
 " Conquer of Completion (CoC)
 " Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-cssmodules', 'coc-eslint', 'coc-explorer', 'coc-phpactor', 'coc-phpls', 'coc-stylelint', 'coc-snippets', 'coc-sql', 'coc-tailwindcss', 'coc-pairs', 'coc-yank', 'coc-prettier']
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-cssmodules', 'coc-eslint', 'coc-explorer', 'coc-phpactor', 'coc-phpls', 'coc-stylelint', 'coc-snippets', 'coc-sql', 'coc-tailwindcss', 'coc-pairs', 'coc-yank', 'coc-prettier']
 
 " ALE
 " Check syntax in Vim asynchronously and fix files,
@@ -129,7 +129,7 @@ Plug 'mileszs/ack.vim'
 Plug 'ggreer/the_silver_searcher'
 
 "For VueJS
-Plug 'neoclide/coc-vetur'
+"Plug 'neoclide/coc-vetur'
 "Plug 'storyn26383/vim-vue'
 
 "Ranger
